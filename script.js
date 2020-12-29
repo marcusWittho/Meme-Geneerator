@@ -24,7 +24,7 @@ memeInsert.addEventListener('change', (event) => {
 });
 
 changeBorder.addEventListener('click', (event) => {
-  const classes = ['fire', 'water', 'earth'];
+  const classes = ['btn-fire', 'btn-water', 'btn-earth'];
   const classesValue = ['3px dashed red', '5px double blue', '6px groove green'];
   for (let index = 0; index < classes.length; index += 1) {
     if (memeImageContainer.style.border === classesValue[index]) {

@@ -2,22 +2,6 @@ body {
   text-align: center;
 }
 
-.fire {
-  background-color: red;
-}
-
-.water {
-  background-color: blue;
-}
-
-.earth {
-  background-color: green;
-}
-
-.change-border button {
-  padding: 5px 10px;
-}
-
 .meme-image-container {
   background-color: white;
   border: 1px solid black;
@@ -48,5 +32,24 @@ body {
 }
 
 .meme-1 , .meme-2 , .meme-3 , .meme-4 {
-  width: 150px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.btn-fire, .btn-water, .btn-earth {
+  border-radius: 50%;
+  outline: none;
+  width: 60px;
+}
+
+.btn-fire:active {
+  box-shadow: 0 0 15px rgba(214, 77, 13, 0.7);
+}
+
+.btn-water:active {
+  box-shadow: 0 0 15px rgba(90, 216, 255, 0.7);
+}
+
+.btn-earth:active {
+  box-shadow: 0 0 15px rgba(161, 255, 54, 0.7);
 }
