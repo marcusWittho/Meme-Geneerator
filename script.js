@@ -5,6 +5,7 @@ const changeBorder = document.querySelector('.change-border');
 const memeImageContainer = document.querySelector('#meme-image-container');
 const memeImage = document.querySelector('#meme-image');
 const preMadeMeme = document.querySelector('.pre-made-meme');
+const btnFake = document.querySelector('.btn-fake');
 
 textInput.addEventListener('input', () => {
   memeText.innerText = textInput.value;
@@ -42,3 +43,5 @@ preMadeMeme.addEventListener('click', (event) => {
     }
   }
 });
+
+btnFake.onclick = () => memeInsert.click();
