@@ -5,6 +5,7 @@ const changeBorder = document.querySelector('.change-border');
 const memeImageContainer = document.querySelector('#meme-image-container');
 const memeImage = document.querySelector('#meme-image');
 const preMadeMeme = document.querySelector('.pre-made-meme');
+const btnFake = document.querySelector('.btn-fake');
 
 textInput.addEventListener('input', () => {
   memeText.innerText = textInput.value;
@@ -24,7 +25,7 @@ memeInsert.addEventListener('change', (event) => {
 });
 
 changeBorder.addEventListener('click', (event) => {
-  const classes = ['fire', 'water', 'earth'];
+  const classes = ['btn-fire', 'btn-water', 'btn-earth'];
   const classesValue = ['3px dashed red', '5px double blue', '6px groove green'];
   for (let index = 0; index < classes.length; index += 1) {
     if (memeImageContainer.style.border === classesValue[index]) {
@@ -42,3 +43,5 @@ preMadeMeme.addEventListener('click', (event) => {
     }
   }
 });
+
+btnFake.onclick = () => memeInsert.click();
