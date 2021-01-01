@@ -88,6 +88,11 @@ body {
   box-shadow: 0 0 5px 0 rgb(54, 198, 255) inset, 0 0 5px 2px rgb(54, 198, 255);
 }
 
+.btn-fake:active {
+  transition: 25ms ease;
+  background-color: rgb(54, 198, 255);
+}
+
 .meme-insert {
   margin-bottom: 10px;
 }
